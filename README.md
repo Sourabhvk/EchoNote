@@ -79,6 +79,33 @@ Remind me to submit the assignment tomorrow at 5pm
 
 ---
 
+## 🎤 Transcription Pipeline (Whisper)
+
+EchoNote uses local speech-to-text to convert voice notes into text.
+
+### Setup
+
+* Python 3.12
+* FFmpeg
+* faster-whisper
+
+### Usage
+
+```bash
+python tools/transcribe.py "data/recordings/note_001.m4a"
+```
+
+### How it works
+
+Voice input → Whisper model → Text output in terminal
+
+### Notes
+
+* First run downloads the model
+* Runs locally (no API needed)
+* CPU mode enabled for simplicity
+
+
 ## Setup
 
 ```bash
