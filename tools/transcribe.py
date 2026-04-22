@@ -1,17 +1,50 @@
 from faster_whisper import WhisperModel
 #give me the tool that can transcribe audio
+
 import sys
-#Lets your script read inputs from terminal - we pass audio file via cmd
+from pathlib import Path
+#Lets our script read multiple inputs from terminal and also helps handle file paths cleanly
 
 model = WhisperModel("base", device="cpu", compute_type="int8")
 #Load the model - we use the "base" model, run it on CPU, and use int8 quantization for faster inference
 
-audio = sys.argv[1]
-#Get the audio file path from the command line arguments i.e. terminal
 
-segments, info = model.transcribe(audio)
-#Transcribe the audio file and get the segments and info. The segments contain the transcribed text and timestamps, while info contains metadata about the transcription process.
+def transcribe_file(audio_path):
+    #Function to handle transcription of a single file
 
-for segment in segments:
-    print(segment.text)
-    #Print the transcribed text for each segment to the terminal. Each segment corresponds to a portion of the audio file, and the text is the transcription of that portion.
+    segments, info = model.transcribe(audio_path)
+    #Transcribe the audio file and get segments and info
+
+    text = " ".join(segment.text.strip() for segment in segments)
+    #Combine all segment texts into one clean sentence
+
+    return text.strip()
+    #Return final cleaned transcription
+
+
+if len(sys.argv) < 2:
+    print("Usage: python tools/transcribe.py <file1> <file2> ...")
+    sys.exit(1)
+#Check if we passed any files, else exit
+
+
+input_files = [Path(p) for p in sys.argv[1:]]
+#Get all file paths passed from terminal
+
+
+for file_path in input_files:
+    #Loop through each file one by one
+
+    print(f"filename: {file_path.name}")
+    #Print just the file name (not full path)
+
+    if not file_path.exists():
+        print("transcription: [FILE NOT FOUND]\n")
+        continue
+    #If file doesn't exist, skip it and move to next
+
+    transcription = transcribe_file(str(file_path))
+    #Call our function to transcribe current file
+
+    print(f"transcription: {transcription}\n")
+    #Print transcription in desired format

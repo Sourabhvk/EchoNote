@@ -1,5 +1,118 @@
 [
-    {
-        
-    }
+  {
+    "id": "0001",
+    "audio_filepath": "data/recordings/0001.m4a",
+    "transcript": "Remind me to take the chicken out from the refrigerator for cooking on Friday on Thursday night at 11.30 pm.",
+    "speaker": "sourabh",
+    "language": "en",
+    "source": "manual_whisper",
+    "created_at": "2026-04-22",
+    "intent": "set_reminder",
+    "task_type": "personal",
+    "entities": {
+      "action": "take chicken out of refrigerator",
+      "object": "chicken",
+      "location": "refrigerator",
+      "purpose": "cooking on Friday"
+    },
+    "datetime_info": {
+      "original_text": "Thursday night at 11:30 pm",
+      "normalized": null,
+      "day_reference": "Thursday",
+      "time": "23:30"
+    },
+    "priority": "normal",
+    "status": "pending"
+  },
+  {
+    "id": "0002",
+    "audio_filepath": "data/recordings/0002.m4a",
+    "transcript": "Remind me to sleep at 11.30 today",
+    
+    "speaker": "sourabh",
+    "language": "en",
+    "source": "manual_whisper",
+    "created_at": "2026-04-22",
+
+    "intent": "set_reminder",
+    "task_type": "personal",
+
+    "entities": {
+      "action": "sleep",
+      "object": null,
+      "location": null,
+      "purpose": null
+    },
+
+    "datetime_info": {
+      "original_text": "today at 11:30",
+      "normalized": null,
+      "day_reference": "today",
+      "time": "23:30"
+    },
+
+    "priority": "normal",
+    "status": "pending"
+  },
+  {
+    "id": "0003",
+    "audio_filepath": "data/recordings/0003.m4a",
+    "transcript": "Remind me to call Mom and Dad at 8 o'clock today.",
+    
+    "speaker": "sourabh",
+    "language": "en",
+    "source": "manual_whisper",
+    "created_at": "2026-04-22",
+
+    "intent": "set_reminder",
+    "task_type": "personal",
+
+    "entities": {
+      "action": "call",
+      "object": "Mom and Dad",
+      "location": null,
+      "purpose": null
+    },
+
+    "datetime_info": {
+      "original_text": "today at 8 o'clock",
+      "normalized": null,
+      "day_reference": "today",
+      "time": "20:00"
+    },
+
+    "priority": "normal",
+    "status": "pending"
+  },
+  {
+    "id": "0004",
+    "audio_filepath": "data/recordings/0004.m4a",
+    "transcript": "Remind me to do laundry on Saturday this week.",
+    
+    "speaker": "sourabh",
+    "language": "en",
+    "source": "manual_whisper",
+    "created_at": "2026-04-22",
+
+    "intent": "set_reminder",
+    "task_type": "personal",
+
+    "entities": {
+      "action": "do laundry",
+      "object": "laundry",
+      "location": null,
+      "purpose": null
+    },
+
+    "datetime_info": {
+      "original_text": "Saturday this week",
+      "normalized": null,
+      "day_reference": "Saturday",
+      "time": null
+    },
+
+    "priority": "normal",
+    "status": "pending"
+  }
+
 ]

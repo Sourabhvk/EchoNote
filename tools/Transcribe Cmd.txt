@@ -1,0 +1,2 @@
+python tools/transcribe.py data/recordings/0001.m4a data/recordings/0002.m4a
+ - MULTIPLE FILES SEPERATED BY BLANK ALLOWED
