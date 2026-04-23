@@ -1,0 +1,75 @@
+{
+  "id": "", 
+  // unique id for each entry (use 0001, 0002... scalable, not just 1,2)
+
+  "audio_file": "", 
+  // relative path to the audio file used for this entry
+
+  "speaker": "", 
+  // who spoke the voice note (useful later if dataset has multiple people)
+
+  "transcript": "", 
+  // raw text output from whisper (no cleaning, as-is)
+
+  "intent": "", 
+  // what user wants → create_reminder / create_task / create_calendar_event / etc.
+
+  "domain": "", 
+  // category → personal / work / health / etc. (helps grouping later)
+
+  "entities": {
+    "title": "", 
+    // short action summary (cleaned version of task)
+
+    "date": "", 
+    // natural language date (e.g. "Saturday", "tomorrow", "next week")
+
+    "time": "", 
+    // specific time if mentioned (e.g. "8:00 PM")
+
+    "start_time": "", 
+    // used for events (start time if range exists)
+
+    "end_time": "", 
+    // used for events (end time if range exists)
+
+    "duration": "", 
+    // duration if mentioned (e.g. "30 mins", "2 hours")
+
+    "participants": [], 
+    // list of people involved (if any)
+
+    "location": "", 
+    // place if mentioned (e.g. "office", "gym")
+
+    "notes": "" 
+    // extra context not fitting above (e.g. "this week", "urgent")
+  },
+
+  "normalized_output": {
+    "title": "", 
+    // final cleaned title (same as entities.title usually)
+
+    "start_datetime": "", 
+    // ISO format datetime → YYYY-MM-DDTHH:MM (convert from natural language)
+
+    "end_datetime": "", 
+    // ISO format end time (if applicable)
+
+    "duration_minutes": "", 
+    // duration converted into minutes (number only)
+
+    "participants": [], 
+    // same as above but cleaned/confirmed
+
+    "location": "" 
+    // cleaned location
+  },
+
+  "needs_clarification": false, 
+  // true if something is missing/ambiguous (like time, vague date)
+
+  "notes": "" 
+  // reasoning for clarification or any edge case info
+}
+```
