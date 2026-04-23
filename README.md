@@ -1,162 +1,69 @@
-# 🎙️ Voice Notes → Task Extractor
+🎙️ EchoNote — Voice → Action
 
-A small project to turn messy voice notes into structured tasks using open-source LLMs.
+A small project to turn messy voice notes into structured, usable actions.
 
----
+What is this?
 
-## What is this?
+I usually dump thoughts as voice notes — reminders, plans, random tasks — and they’re all over the place.
 
-I tend to dump thoughts as voice notes — reminders, random tasks, ideas — and they’re usually unstructured.
+EchoNote tries to fix that by turning voice into something structured.
 
-This project tries to fix that.
+What it does
+Converts voice notes → text
+Understands intent (event / reminder / task / etc.)
+Extracts key details (time, date, people)
+Outputs clean JSON
 
-The idea is simple:
-- Take a voice note
-- Convert it to text
-- Extract useful tasks (with date, time, priority)
-- Store everything in a clean format
+Basically:
+voice → structured action
 
----
+How it works
+Record voice note
+Transcribe (Whisper)
+Parse with LLM (Ollama)
+Output structured JSON
+Example
 
-## How it works
+Input:
 
-1. Record voice notes
-2. Convert speech → text (Whisper)
-3. Send text to an LLM (via Ollama)
-4. Get structured output (JSON)
+Meet ABC tomorrow at 9 PM for drinks
 
----
+Output:
 
-## Project structure
-
-```
-voice-task-extractor/
-
-data/
-  raw_audio/        # voice recordings
-  transcripts/      # text versions of audio
-  dataset.json      # labeled examples
-
-src/
-  stt.py            # speech-to-text
-  extractor.py      # LLM task extraction
-  utils.py
-
-outputs/
-  results.json
-
-README.md
-requirements.txt
-```
-
----
-
-## Example
-
-**Input:**
-```
-Remind me to submit the assignment tomorrow at 5pm
-```
-
-**Output:**
-```json
 {
-  "task": "Submit assignment",
-  "date": "2026-04-23",
-  "time": "17:00",
-  "priority": "medium"
+  "intent": "create_calendar_event",
+  "title": "Drinks with ABC",
+  "date": "tomorrow",
+  "time": "21:00"
 }
-```
+Tech stack
+Python
+Whisper (speech-to-text)
+Ollama (LLMs like LLaMA / Mistral)
+JSON
+Project structure
+data/
+  recordings/
+  dataset.json
 
----
+tools/
+  transcribe.py
 
-## Tech stack
-
-- Python  
-- Whisper (for speech-to-text)  
-- Ollama (to run open-source LLMs like Mistral / LLaMA)  
-- JSON for storing data  
-
----
-
-## 🎤 Transcription Pipeline (Whisper)
-
-EchoNote uses local speech-to-text to convert voice notes into text.
-
-### Setup
-
-* Python 3.12
-* FFmpeg
-* faster-whisper
-
-### Usage
-
-```bash
-python tools/transcribe.py "data/recordings/note_001.m4a"
-```
-
-### How it works
-
-Voice input → Whisper model → Text output in terminal
-
-### Notes
-
-* First run downloads the model
-* Runs locally (no API needed)
-* CPU mode enabled for simplicity
-
-
-## Setup
-
-```bash
-git clone https://github.com/your-username/voice-task-extractor.git
-cd voice-task-extractor
-
-pip install -r requirements.txt
-```
-
-Run the extractor:
-
-```bash
-python src/extractor.py
-```
-
----
-
-## Current plan
-
-**Phase 1 — Dataset**
-- Create ~100 examples manually
-- Store them in JSON
-
-**Phase 2 — Pipeline**
-- Hook up Whisper
-- Connect LLM through Ollama
-- Extract tasks reliably
-
-**Phase 3 — Evaluation**
-- Compare outputs vs ground truth
-- Improve prompts / logic
-
----
-
-## Why I’m building this
-
-Mostly to:
-- learn how LLM pipelines actually work end-to-end  
-- work with real (messy) data instead of clean datasets  
-- build something useful for daily life  
-
----
-
-## Notes
-
-- No fine-tuning (at least initially)
-- Focus is on prompt engineering + pipeline design
-- Might expand to calendar integration later
-
----
-
-## License
+Run transcription
+python tools/transcribe.py data/recordings/0001.m4a
+Plan
+Build small dataset (mixed voice notes)
+Extract intent + entities reliably
+Output clean JSON
+Maybe hook into calendar later
+Why I’m building this
+learn real LLM pipelines
+work with messy input (actual voice)
+build something I’d actually use
+Notes
+keeping it simple
+no fine-tuning (for now)
+focus on understanding > complexity
+License
 
 MIT
