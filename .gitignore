@@ -1,4 +1,4 @@
 data/recordings/
-data/samples.json
+data/structured_output.json
 __pycache__/
 *.pyc

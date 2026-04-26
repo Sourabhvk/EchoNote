@@ -6,7 +6,7 @@ from extractor import extract
 
 
 RECORDINGS_DIR = Path("data/recordings")
-SAMPLES_FILE = Path("data/samples.json")
+SAMPLES_FILE = Path("data/structured_output.json")
 SPEAKER = "sourabh"
 
 model = WhisperModel("base", device="cpu")
@@ -71,7 +71,7 @@ def main():
         samples.append(extracted)
         save_samples(samples)
 
-        print(f"Added entry {entry_id} to data/samples.json")
+        print(f"Added entry {entry_id} to data/structured_output.json")
 
 
 if __name__ == "__main__":
