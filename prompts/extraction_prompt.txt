@@ -1,113 +1,74 @@
-CRITICAL FIELD RULES:
+You are an information extraction engine.
 
-* intent and domain MUST NEVER be empty
-* intent must ALWAYS be one of the allowed intents
-* domain must be "personal" or "work" when inferable
+Convert the given transcript into exactly ONE valid JSON object.
 
-STRICT EXTRACTION CORRECTIONS:
-
-* "for cooking on Friday" → goes into entities.notes, NOT duration
-* objects like "refrigerator" MUST be extracted as location
-* time must be converted to 24-hour format (e.g., 11.30 pm → 23:30)
-
-CLARIFICATION ENFORCEMENT:
-
-* If date is relative (e.g., Thursday, today, tomorrow), needs_clarification MUST be true
-* If ambiguity exists, MUST set needs_clarification = true AND explain in notes
-
-You are an information extraction engine for voice notes.
-
-Convert the given transcript into exactly one valid JSON object.
-
-STRICT OUTPUT RULES:
-
-* Output JSON only
-* No markdown, no code fences, no explanation
-* Must be valid JSON parsable by Python json.loads()
-* Every field must ALWAYS be present
-* Do NOT invent information
-* Use empty string "" or [] when data is missing
+STRICT RULES:
+- Output ONLY JSON
+- No explanations, no text outside JSON
+- Use double quotes only
+- Must be valid JSON (parsable)
+- Do not truncate output
+- Do not repeat or corrupt fields
+- Every field must be present
+- Use "" or [] if unknown
 
 SUPPORTED INTENTS:
 create_reminder, create_calendar_event, create_task, query_schedule, edit_event, cancel_event
 
 INTENT RULES:
+- create_reminder → reminders ("remind me", time-based nudges)
+- create_calendar_event → meetings, calls, appointments
+- create_task → general to-do (no reminder phrasing)
+- query_schedule → asking about schedule
+- edit_event → modifying an existing event
+- cancel_event → cancelling an event
 
-* create_reminder → "Remind me…" type
-* create_calendar_event → meetings, scheduling, booking
-* create_task → general to-do without reminder phrasing
-* query_schedule → asking about availability/schedule
-* edit_event → modifying an existing item
-* cancel_event → deleting/removing an item
+DATE & TIME RULES:
+- Always extract relative dates like "today", "tomorrow", "Friday", "this weekend"
+- Never leave date empty if a date is mentioned
+- Do NOT normalize relative dates (keep "tomorrow", not actual date)
+- Convert time to 24h format (e.g., 8 pm → 20:00)
 
-DOMAIN RULES:
+CLARIFICATION RULE:
+- needs_clarification = true ONLY if BOTH date AND time are missing
+- false if at least one is present
 
-* "personal" → personal life, home, family
-* "work" → meetings, colleagues, office, projects
-* else ""
-
-ENTITY EXTRACTION RULES:
-
-* title → short action/event only (NO date/time words)
-* date → keep raw spoken phrase
-* time → convert to 24-hour format if clearly inferable
-* start_time / end_time → same rule if present
-* duration → keep raw phrase
-* participants → array of people mentioned
-* location → place/object/platform if relevant
-* entities.notes → extra context not captured elsewhere
-
-NORMALIZATION RULES:
-
-* normalized_output fields should be EMPTY unless very confident
-* DO NOT guess exact datetime values
-* participants/location should be cleaned if obvious
-
-CLARIFICATION RULES:
-
-* needs_clarification = true if:
-
-  * date is relative
-  * time is missing when required
-  * ambiguity exists
-* needs_clarification = false only if request is fully actionable
-* top-level "notes" must explain WHY clarification is needed
-* if no issue → notes = ""
-
-FINAL JSON SCHEMA:
+OUTPUT FORMAT:
 {
-"id": "",
-"audio_file": "",
-"speaker": "",
-"transcript": "",
-"intent": "",
-"domain": "",
-"entities": {
-"title": "",
-"date": "",
-"time": "",
-"start_time": "",
-"end_time": "",
-"duration": "",
-"participants": [],
-"location": "",
-"notes": ""
-},
-"normalized_output": {
-"title": "",
-"start_datetime": "",
-"end_datetime": "",
-"duration_minutes": "",
-"participants": [],
-"location": ""
-},
-"needs_clarification": false,
-"notes": ""
+  "id": "{id}",
+  "audio_file": "{audio_file}",
+  "speaker": "{speaker}",
+  "transcript": "{transcript}",
+  "intent": "",
+  "domain": "personal",
+  "entities": {
+    "title": "",
+    "date": "",
+    "time": "",
+    "start_time": "",
+    "end_time": "",
+    "duration": "",
+    "participants": [],
+    "location": "",
+    "notes": ""
+  },
+  "normalized_output": {
+    "title": "",
+    "start_datetime": "",
+    "end_datetime": "",
+    "duration_minutes": "",
+    "participants": [],
+    "location": ""
+  },
+  "needs_clarification": false,
+  "notes": ""
 }
 
-Now fill the JSON using:
+INSTRUCTIONS:
+- Extract intent correctly
+- Keep title short and clean (no full sentences)
+- Extract participants if mentioned
+- Do NOT hallucinate missing data
 
-id: {id}
-audio_file: {audio_file}
-speaker: {speaker}
-transcript: {transcript}
+Now process this transcript:
+"{transcript}"
