@@ -3,6 +3,7 @@ from pathlib import Path
 
 from faster_whisper import WhisperModel
 from extractor import extract
+from icsGenerator import generate_ics_for_calendar
 
 
 RECORDINGS_DIR = Path("data/recordings")
@@ -84,6 +85,9 @@ def main():
 
         samples.append(extracted)
         save_samples(samples)
+
+        # Add event to calendar if it's a calendar/reminder entry
+        generate_ics_for_calendar(extracted)
 
         print(f"Added entry {entry_id} to data/structured_output.json")
 

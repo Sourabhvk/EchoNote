@@ -2,3 +2,5 @@ data/recordings/
 data/structured_output.json
 __pycache__/
 *.pyc
+output/*.ics
+data/archive/
