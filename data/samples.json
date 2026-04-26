@@ -1,0 +1,121 @@
+[
+  {
+    "id": "0001",
+    "audio_file": "data/recordings/0001.m4a",
+    "speaker": "sourabh",
+    "transcript": "Remind me to take the chicken out from the refrigerator for cooking on Friday on Thursday night at 11.30 pm.",
+    "intent": "create_reminder",
+    "domain": "personal",
+    "entities": {
+      "title": "Take chicken out",
+      "date": "Thursday",
+      "time": "23:30",
+      "start_time": "23:30",
+      "end_time": "",
+      "duration": "",
+      "participants": [],
+      "location": "",
+      "notes": ""
+    },
+    "normalized_output": {
+      "title": "Take chicken out",
+      "start_datetime": "2026-04-30T23:30:00",
+      "end_datetime": "",
+      "duration_minutes": "",
+      "participants": [],
+      "location": ""
+    },
+    "needs_clarification": false,
+    "notes": ""
+  },
+  {
+    "id": "0002",
+    "audio_file": "data/recordings/0002.m4a",
+    "speaker": "sourabh",
+    "transcript": "Remind me to sleep at 11.30 today",
+    "intent": "create_reminder",
+    "domain": "personal",
+    "entities": {
+      "title": "sleep",
+      "date": "today",
+      "time": "23:30",
+      "start_time": "23:30",
+      "end_time": "",
+      "duration": "",
+      "participants": [],
+      "location": ""
+    },
+    "normalized_output": {
+      "title": "sleep",
+      "start_datetime": "2026-04-27T23:30:00",
+      "end_datetime": "",
+      "duration_minutes": "",
+      "participants": [],
+      "location": ""
+    },
+    "needs_clarification": false,
+    "notes": ""
+  },
+  {
+    "id": "0003",
+    "audio_file": "data/recordings/0003.m4a",
+    "speaker": "sourabh",
+    "transcript": "Remind me to call Mom and Dad at 8 o'clock today.",
+    "intent": "create_reminder",
+    "domain": "personal",
+    "entities": {
+      "title": "call Mom and Dad",
+      "date": "today",
+      "time": "20:00",
+      "start_time": "20:00",
+      "end_time": "",
+      "duration": "",
+      "participants": [
+        "Mom",
+        "Dad"
+      ],
+      "location": ""
+    },
+    "normalized_output": {
+      "title": "call Mom and Dad",
+      "start_datetime": "2026-04-27T20:00:00",
+      "end_datetime": "",
+      "duration_minutes": "",
+      "participants": [
+        "Mom",
+        "Dad"
+      ],
+      "location": ""
+    },
+    "needs_clarification": false,
+    "notes": ""
+  },
+  {
+    "id": "0004",
+    "audio_file": "data/recordings/0004.m4a",
+    "speaker": "sourabh",
+    "transcript": "Remind me to do laundry on Saturday this week",
+    "intent": "create_reminder",
+    "domain": "personal",
+    "entities": {
+      "title": "do laundry",
+      "date": "Saturday this week",
+      "time": "",
+      "start_time": "",
+      "end_time": "",
+      "duration": "",
+      "participants": [],
+      "location": ""
+    },
+    "normalized_output": {
+      "title": "do laundry",
+      "start_datetime": "",
+      "end_datetime": "",
+      "duration_minutes": "",
+      "participants": [],
+      "location": ""
+    },
+    "needs_clarification": true,
+    "notes": "Date or time could not be normalized"
+  }
+]

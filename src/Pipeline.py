@@ -86,6 +86,7 @@ def main():
         samples.append(extracted)
         save_samples(samples)
 
+        print(f"JSON ready for {entry_id}, creating ICS event...")
         # Add event to calendar if it's a calendar/reminder entry
         generate_ics_for_calendar(extracted)
 
