@@ -4,8 +4,8 @@ from postprocess import normalize_datetime  # Reuse our date normalization logic
 
 MODEL_NAME = "qwen2.5:7b"  # Single place to change which local model is used.
 
-
-def load_prompt(id, audio_file, speaker, transcript):  # Build a final prompt string from template + inputs.
+# Build a final prompt string from template + inputs
+def load_prompt(id, audio_file, speaker, transcript): 
     with open("prompts/extraction_prompt.txt", "r", encoding="utf-8") as f:  # Open the reusable prompt file safely as UTF-8 text.
         template = f.read()  # Read the whole prompt template into memory.
 
@@ -38,25 +38,25 @@ def extract(id, audio_file, speaker, transcript):  # Send prompt to Ollama and r
         return {"error": "ollama not running", "raw": "start Ollama first"}  # Return a clear connection error payload.
 
     if response.status_code != 200:  # Non-200 means API call failed from HTTP perspective.
-        return {  # Return details so debugging is easy.
-            "error": "ollama api failed",  # High-level error label.
+        return {
+            "error": "ollama api failed",
             "code": response.status_code,  # Actual HTTP status code.
             "raw": response.text  # Raw response text for diagnosis.
-        }  # End error response dictionary.
+        }
 
     text = response.json().get("response", "").strip()  # Pull generated text from API JSON and trim whitespace.
 
     if not text:  # If model returned empty string, this is a failure case.
         return {"error": "empty model output", "raw": text}  # Return an explicit empty-output error.
-
+    
+    #We basically call postprocessing.py here
     try:  # Try converting model text into a Python dictionary/list.
         data = json.loads(text)  # Attempt to parse the model's response as JSON.
         data = normalize_datetime(data)  # Clean up any date/datetime fields in the model output.
-        return data  # Return the structured, normalized data extracted from the model.
+        return data 
     
     except json.JSONDecodeError:  # Happens when model text is not valid JSON.
-        return {"error": "invalid json", "raw": text}  # Return raw text so you can inspect what model produced.
-
+        return {"error": "invalid json", "raw": text} 
 
 # if __name__ == "__main__":  # Run this block only when executing this file directly.
 #     output = extract(  # Call extract with a sample test input.
@@ -65,5 +65,4 @@ def extract(id, audio_file, speaker, transcript):  # Send prompt to Ollama and r
 #         "sourabh",  # Sample speaker name.
 #         "Remind me to call mom tomorrow at 8 pm"  # Sample transcript sentence.
 #     )  # End sample extract call.
-#
 #     print(json.dumps(output, indent=2))  # Pretty-print returned dictionary as readable JSON.
