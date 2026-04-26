@@ -58,12 +58,12 @@ def extract(id, audio_file, speaker, transcript):  # Send prompt to Ollama and r
         return {"error": "invalid json", "raw": text}  # Return raw text so you can inspect what model produced.
 
 
-if __name__ == "__main__":  # Run this block only when executing this file directly.
-    output = extract(  # Call extract with a sample test input.
-        "0001",  # Sample note id.
-        "data/recordings/0001.m4a",  # Sample audio path string.
-        "sourabh",  # Sample speaker name.
-        "Remind me to call mom tomorrow at 8 pm"  # Sample transcript sentence.
-    )  # End sample extract call.
-
-    print(json.dumps(output, indent=2))  # Pretty-print returned dictionary as readable JSON.
+# if __name__ == "__main__":  # Run this block only when executing this file directly.
+#     output = extract(  # Call extract with a sample test input.
+#         "0001",  # Sample note id.
+#         "data/recordings/0001.m4a",  # Sample audio path string.
+#         "sourabh",  # Sample speaker name.
+#         "Remind me to call mom tomorrow at 8 pm"  # Sample transcript sentence.
+#     )  # End sample extract call.
+#
+#     print(json.dumps(output, indent=2))  # Pretty-print returned dictionary as readable JSON.
