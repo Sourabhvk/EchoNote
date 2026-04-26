@@ -24,6 +24,8 @@ def transcribe_audio(audio_file):
 
 def load_samples():
     if not SAMPLES_FILE.exists():
+        SAMPLES_FILE.parent.mkdir(parents=True, exist_ok=True)
+        save_samples([])
         return []
 
     with open(SAMPLES_FILE, "r", encoding="utf-8") as f:
