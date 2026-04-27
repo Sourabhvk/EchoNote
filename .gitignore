@@ -1,5 +1,6 @@
 data/recordings/
 data/structured_output.json
+data/SynthData/
 __pycache__/
 *.pyc
 output/*.ics

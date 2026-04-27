@@ -1,2 +1,15 @@
-faster-whisper
-requests
+faster-whisper>=1.0.0
+requests>=2.28.0
+pydantic>=2.0.0
+
+# Optional: For LLM inference (choose one)
+# For local inference with GGUF models:
+ctransformers>=0.2.23
+# OR for Ollama API calls:
+# ollama>=0.0.1
+
+# Optional: For HPC environments (edge-tts)
+edge-tts>=6.1.0
+
+# Optional: For development/testing
+python-dotenv>=1.0.0

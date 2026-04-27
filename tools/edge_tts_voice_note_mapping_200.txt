@@ -1,0 +1,200 @@
+0001.m4a|Hey remind me to call mom tonight around 8
+0002.m4a|Can you remind me tomorrow morning to take the chicken out of the freezer
+0003.m4a|Remind me after lunch to reply to Rahul about the invoice
+0004.m4a|Set a reminder for me to drink water at 3 pm today
+0005.m4a|Need a reminder to pay the electricity bill before 6 on Friday
+0006.m4a|Please remind me in two hours to check the laundry
+0007.m4a|Remind me to pack my charger before I leave for office
+0008.m4a|Uh remind me this weekend to clean the balcony plants
+0009.m4a|Remind me tonight to put the leftovers in the fridge
+0010.m4a|Can you remind me at noon to take my medicine
+0011.m4a|I need a reminder for next Monday to book the dentist
+0012.m4a|Remind me before midnight to submit that form
+0013.m4a|Set a reminder to call dad after dinner today
+0014.m4a|Remind me tomorrow at 7 am to take out the trash
+0015.m4a|Please remind me on Saturday morning to water the plants
+0016.m4a|Remind me in thirty minutes to check the rice
+0017.m4a|Hey remind me before my meeting to print the documents
+0018.m4a|Remind me at 9 tonight to restart the router
+0019.m4a|Can you remind me next week to renew the gym membership
+0020.m4a|Remind me this evening to buy milk and eggs
+0021.m4a|Set a reminder for Friday night to charge the camera batteries
+0022.m4a|Remind me tomorrow before lunch to email the notes to Neha
+0023.m4a|Need a reminder to carry my passport for the appointment
+0024.m4a|Remind me later today to message Ankit about the repo
+0025.m4a|Please remind me at 5 pm to pick up the parcel downstairs
+0026.m4a|Remind me Sunday evening to plan meals for the week
+0027.m4a|Hey remind me after work to refill petrol
+0028.m4a|Remind me at 11 30 tonight to sleep on time
+0029.m4a|Can you remind me on Thursday night to soak the beans
+0030.m4a|Remind me tomorrow afternoon to check train tickets
+0031.m4a|Set a reminder in one hour to move clothes to the dryer
+0032.m4a|Remind me before 10 am tomorrow to upload the receipts
+0033.m4a|Please remind me tonight to set the alarm for 6
+0034.m4a|Remind me next Tuesday to wish Priya happy birthday
+0035.m4a|Need a reminder after class to call home
+0036.m4a|Remind me by evening to send the rent receipt to dad
+0037.m4a|Hey remind me tomorrow to back up my laptop
+0038.m4a|Remind me at 4 today to confirm dinner plans with Meera
+0039.m4a|Can you remind me this Sunday to review my budget
+0040.m4a|Remind me in fifteen minutes to turn off the oven
+0041.m4a|Please remind me Friday morning to cancel that trial subscription
+0042.m4a|Remind me tonight before sleeping to pack gym clothes
+0043.m4a|Set a reminder for next Monday at 11 to call the bank
+0044.m4a|Remind me tomorrow evening to download the boarding pass
+0045.m4a|Hey remind me after breakfast to practice German for twenty minutes
+0046.m4a|Remind me this weekend to update my resume
+0047.m4a|Can you remind me at 7 pm to check package tracking
+0048.m4a|Remind me before leaving to keep the keys in my backpack
+0049.m4a|Need a reminder on Wednesday morning to call the plumber
+0050.m4a|Remind me tonight to order groceries
+0051.m4a|Please remind me tomorrow at 8 pm to call mom and dad
+0052.m4a|Remind me after the standup to review the pull request
+0053.m4a|Hey remind me Saturday afternoon to buy Aarav's birthday gift
+0054.m4a|Remind me at 6 this evening to send flowers to mom
+0055.m4a|Can you remind me next week to replace the water filter
+0056.m4a|Remind me tomorrow morning to prepare questions for the interview
+0057.m4a|Set a reminder for 2 pm today to check the washing machine
+0058.m4a|Remind me before dinner to freeze the curry
+0059.m4a|Please remind me this Thursday to return the library book
+0060.m4a|Remind me tonight around 10 to write down the expenses
+0061.m4a|Schedule a quick team sync with Riya tomorrow at 10 am for half an hour
+0062.m4a|Add dentist appointment next Monday at 4 pm
+0063.m4a|Put dinner with Akash on Friday night at 8
+0064.m4a|Book a call with the design team next Wednesday at 2 pm
+0065.m4a|Create a calendar event for project review Thursday morning at 11
+0066.m4a|Add my gym trial session this Saturday at 9 am
+0067.m4a|Schedule coffee with Priya tomorrow evening around 5
+0068.m4a|Put the client demo on my calendar next Tuesday at 3 pm
+0069.m4a|Add passport appointment Monday at noon
+0070.m4a|Schedule study session with Rohit tonight at 7 for two hours
+0071.m4a|Create office standup every weekday at 9 30 am
+0072.m4a|Add grocery shopping on Sunday at 6 pm
+0073.m4a|Schedule video call with mom and dad today at 8 pm
+0074.m4a|Put apartment viewing on Saturday afternoon at 2
+0075.m4a|Create product planning meeting next Friday at 1 pm
+0076.m4a|Add lunch with Meera tomorrow at 12 30
+0077.m4a|Schedule doctor visit next Thursday at 5 pm
+0078.m4a|Block deep work tomorrow from 9 to 11 am
+0079.m4a|Add sprint retrospective this Friday at 4
+0080.m4a|Schedule call with the bank manager Tuesday at 10 am
+0081.m4a|Put yoga class on Wednesday morning at 7
+0082.m4a|Add haircut appointment this Sunday at 11 am
+0083.m4a|Schedule movie night with friends Saturday at 8 30 pm
+0084.m4a|Create calendar event for flight check in tomorrow at 6 pm
+0085.m4a|Add code review session with Aman today at 3
+0086.m4a|Schedule interview prep call on Monday at 6 pm
+0087.m4a|Block Sunday morning for cleaning the house
+0088.m4a|Add landlord inspection next Wednesday at 5 pm
+0089.m4a|Schedule meeting with HR tomorrow at 2 30 pm
+0090.m4a|Put family lunch next Sunday at 1 pm
+0091.m4a|Add car service appointment Friday at 10 am
+0092.m4a|Schedule online workshop Thursday from 6 to 8 pm
+0093.m4a|Create budget review on the first at 7 pm
+0094.m4a|Add backend team meeting next Tuesday at 11 am
+0095.m4a|Put vaccine appointment on Saturday at 10 15 am
+0096.m4a|Schedule cricket practice Sunday at 4 pm
+0097.m4a|Add call with Professor Sharma tomorrow at 5 30 pm
+0098.m4a|Create housewarming party next Friday at 7 pm
+0099.m4a|Block Tuesday night for reading
+0100.m4a|Schedule planning call with Sneha on Wednesday at noon
+0101.m4a|Add eye checkup next Monday at 3 pm
+0102.m4a|Put brunch with cousins on Sunday at 11 30 am
+0103.m4a|Schedule onboarding session tomorrow from 10 to 12
+0104.m4a|Add car pickup from service Friday at 6 pm
+0105.m4a|Create calendar block for tax paperwork Saturday afternoon
+0106.m4a|Schedule meetup with college friends next Thursday at 7 pm
+0107.m4a|Add rent discussion with the landlord tomorrow at 6 pm
+0108.m4a|Put machine learning study group on Tuesday at 8 pm
+0109.m4a|Schedule presentation rehearsal Wednesday at 4 pm
+0110.m4a|Add temple visit Sunday morning at 8
+0111.m4a|Create dinner reservation event Friday at 9 pm
+0112.m4a|Schedule monthly finance review next Monday at 8 pm
+0113.m4a|Add recruiter call Thursday at 3 30 pm
+0114.m4a|Put weekend hike on Saturday at 6 am
+0115.m4a|Schedule database migration meeting Tuesday at 2 pm
+0116.m4a|Add repair technician visit tomorrow between 4 and 6 pm
+0117.m4a|Block Friday evening for packing for the trip
+0118.m4a|Schedule call with Neeraj about the app idea tonight at 9
+0119.m4a|Add parent teacher meeting next Wednesday at 10 am
+0120.m4a|Create community cleanup event Sunday at 9 am
+0121.m4a|I need to clean the kitchen after dinner
+0122.m4a|Add a task to finish the project README
+0123.m4a|Make a task for updating my LinkedIn profile
+0124.m4a|I should sort the downloads folder this week
+0125.m4a|Add a task to compare health insurance plans
+0126.m4a|Make a task to organize my desk drawers
+0127.m4a|I need to write notes from the last lecture
+0128.m4a|Add a task to fix the login bug in the app
+0129.m4a|Create a task to research weekend trip options
+0130.m4a|I need to prepare the grocery list
+0131.m4a|Add a task to review the expense spreadsheet
+0132.m4a|Make a task to learn basic Docker commands
+0133.m4a|I should back up my phone photos
+0134.m4a|Create a task to clean the balcony
+0135.m4a|Add a task to draft the blog post outline
+0136.m4a|I need to update the project dependencies
+0137.m4a|Make a task to organize the pantry
+0138.m4a|Add a task to read the calendar export code
+0139.m4a|I need to finish folding the laundry
+0140.m4a|Create a task to practice SQL joins
+0141.m4a|Add a task to write test cases for the extractor
+0142.m4a|I should declutter the wardrobe
+0143.m4a|Make a task to check laptop warranty details
+0144.m4a|Create a task to shortlist birthday gift ideas
+0145.m4a|Add a task to prepare interview answers
+0146.m4a|I need to clean the bike this weekend
+0147.m4a|Make a task to rewrite the extraction prompt
+0148.m4a|Create a task to document the pipeline steps
+0149.m4a|Add a task to review my saved bookmarks
+0150.m4a|I should update my monthly budget sheet
+0151.m4a|Make a task to learn about ICS calendar files
+0152.m4a|Create a task to rename old recording files
+0153.m4a|Add a task to improve the JSON validation script
+0154.m4a|I need to plan meals for next week
+0155.m4a|Make a task to remove unused Python packages
+0156.m4a|Create a task to organize study notes
+0157.m4a|Add a task to write one simple unit test
+0158.m4a|I should review my cloud storage folders
+0159.m4a|Make a task to prepare the demo checklist
+0160.m4a|Create a task to clean the email inbox
+0161.m4a|What is on my calendar tomorrow
+0162.m4a|Do I have any meetings after lunch today
+0163.m4a|What reminders are due tonight
+0164.m4a|Am I free on Friday evening
+0165.m4a|Show me my schedule for next Monday
+0166.m4a|What do I have planned this weekend
+0167.m4a|Do I have a dentist appointment this week
+0168.m4a|What is my next meeting today
+0169.m4a|Check if I am busy tomorrow at 3 pm
+0170.m4a|What tasks do I need to finish today
+0171.m4a|Do I have anything scheduled on Saturday morning
+0172.m4a|What is coming up in the next two hours
+0173.m4a|Show my events for the rest of the day
+0174.m4a|Do I have any calls with mom this week
+0175.m4a|What reminders are pending for tomorrow
+0176.m4a|Am I free between 5 and 7 pm today
+0177.m4a|What is my first event on Monday
+0178.m4a|Show me all tasks related to the project
+0179.m4a|Do I have a calendar event for the client demo
+0180.m4a|What is scheduled for Sunday evening
+0181.m4a|Move the dentist appointment from Monday to Tuesday at 4 pm
+0182.m4a|Change my meeting with Riya tomorrow to 11 am
+0183.m4a|Update dinner with Akash to Friday at 9 pm
+0184.m4a|Shift the project review to Thursday afternoon at 3
+0185.m4a|Rename the grocery shopping event to weekly grocery run
+0186.m4a|Move the call with mom and dad to 8 30 tonight
+0187.m4a|Change the interview prep call so it lasts an hour
+0188.m4a|Update the house cleaning block to Sunday afternoon
+0189.m4a|Move the sprint retrospective to Friday at 5 pm
+0190.m4a|Change the yoga class location to the community center
+0191.m4a|Cancel the dentist appointment on Monday
+0192.m4a|Delete dinner with Akash this Friday
+0193.m4a|Cancel my team sync with Riya tomorrow
+0194.m4a|Remove the yoga class from my calendar
+0195.m4a|Cancel the apartment viewing on Saturday
+0196.m4a|Delete the project review meeting for Thursday
+0197.m4a|Cancel the call with the bank manager
+0198.m4a|Remove the weekend hike event
+0199.m4a|Cancel movie night with friends
+0200.m4a|Delete the grocery shopping event on Sunday
